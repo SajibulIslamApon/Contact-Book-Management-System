@@ -10,7 +10,7 @@ def search_contact():
         with open('contact_book.csv', 'r') as file:
             reader = csv.reader(file)
             for row in reader:
-                if row[2] == search_param:
+                if row[3] == search_param:
                     print('*********** Search Result ***********')
                     print(row[0], ".",  row[1], row[2],row[3], row[4])
 

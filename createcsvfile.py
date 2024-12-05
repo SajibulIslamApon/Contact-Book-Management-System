@@ -1,4 +1,4 @@
-import csv
+
 def create_csv_file():
     print("   ")
     with open('contact_book.csv', 'w') as file:

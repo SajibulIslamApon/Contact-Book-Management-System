@@ -8,7 +8,7 @@ def view_contact():
             reader = csv.reader(file)
             print('***************** Contact List *****************')
             for row in reader:
-                print(row[0], ".",  row[1], row[2],row[3], row[4])
+                print(row[0], ".",  row[1],'|', row[2],'|',row[3],'|', row[4])
     except FileNotFoundError:
         create_csv_file()
 

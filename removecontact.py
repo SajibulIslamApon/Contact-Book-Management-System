@@ -4,7 +4,7 @@ from viewcontact import view_contact
 def remove_contact():
     view_contact()
     print("   ")
-    contact_to_remove = input('Enter the number of the contact to remove (Example: 1,2 .etc): ')
+    contact_to_remove = input('Enter the number of the contact to remove (Example: 1): ')
     updated_rows = []
     with open('contact_book.csv', 'r') as file:
         reader = csv.reader(file)

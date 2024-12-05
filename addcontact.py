@@ -10,6 +10,7 @@ def add_contact():
         phone = int(input('# Please enter Phone: '))
         address = str(input('# Please enter Address: '))
         if phone:
+
             try:
                 duplicate_found = False
                 with open('contact_book.csv', 'r') as file:
